@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anitha Byreddy | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#111827;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+section{
+    min-height:100vh;
+    padding:100px 8%;
+}
+
+.hero{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.hero p{
+    margin-top:15px;
+    max-width:700px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+    color:#38bdf8;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+}
+
+.skills-container,
+.projects-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111827;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:40px;
+    }
+
+    nav ul li{
+        margin-left:15px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Portfolio</div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Hello, I'm <span>Anitha Byreddy</span></h1>
+
+    <h2>Full Stack Developer</h2>
+
+    <p>
+        Passionate Computer Science student skilled in web development,
+        Python, JavaScript, and building innovative projects using modern technologies.
+    </p>
+
+    <a href="#projects" class="btn">View Projects</a>
+</section>
+
+<section class="about" id="about">
+    <h2 class="title">About Me</h2>
+
+    <p>
+        I am a Computer Science Engineering student passionate about
+        software development, full-stack applications, AI-based projects,
+        and solving real-world problems with technology. I enjoy learning
+        new technologies and building impactful products.
+    </p>
+</section>
+
+<section id="skills">
+    <h2 class="title">Skills</h2>
+
+    <div class="skills-container">
+        <div class="card">
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript, React</p>
+        </div>
+
+        <div class="card">
+            <h3>Backend</h3>
+            <p>Python, Django, Node.js, Express.js</p>
+        </div>
+
+        <div class="card">
+            <h3>Database</h3>
+            <p>MySQL, MongoDB</p>
+        </div>
+
+        <div class="card">
+            <h3>Tools</h3>
+            <p>Git, GitHub, VS Code, Vercel</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="title">Projects</h2>
+
+    <div class="projects-container">
+
+        <div class="card">
+            <h3>Campus SkillSwap</h3>
+            <p>
+                A platform that helps students find teammates with complementary skills.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>CropRisk</h3>
+            <p>
+                Weather-aware spraying advisor for farmers with risk prediction and alerts.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>AI Vehicle Density Detection</h3>
+            <p>
+                AI-based traffic density detection system using computer vision.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="title">Contact Me</h2>
+
+    <p>Email: yourmail@example.com</p>
+    <p>GitHub: github.com/yourusername</p>
+    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+</section>
+
+<footer>
+    <p>© 2026 Anitha Byreddy. All Rights Reserved.</p>
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e){
+        e.preventDefault();
+
+        document.querySelector(
+            this.getAttribute("href")
+        ).scrollIntoView({
+            behavior:"smooth"
+        });
+    });
+});
+</script>
+
+</body>
+</html>
