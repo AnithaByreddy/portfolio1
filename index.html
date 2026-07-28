@@ -1,264 +1,364 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Byreddy Anitha | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byreddy Anitha | Portfolio</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
-body{
-    background:#0f172a;
-    color:white;
-    line-height:1.6;
-}
-
-header{
-    position:fixed;
-    width:100%;
-    top:0;
-    background:#111827;
-    padding:15px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    z-index:1000;
-}
-
-.logo{
-    font-size:28px;
-    font-weight:bold;
-    color:#38bdf8;
-}
-
-nav ul{
-    display:flex;
-    list-style:none;
-}
-
-nav ul li{
-    margin-left:25px;
-}
-
-nav ul li a{
-    color:white;
-    text-decoration:none;
-    transition:0.3s;
-}
-
-nav ul li a:hover{
-    color:#38bdf8;
-}
-
-section{
-    min-height:100vh;
-    padding:100px 8%;
-}
-
-.hero{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
-
-.hero h1{
-    font-size:55px;
-}
-
-.hero span{
-    color:#38bdf8;
-}
-
-.hero p{
-    margin-top:15px;
-    max-width:700px;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 25px;
-    background:#38bdf8;
-    color:white;
-    text-decoration:none;
-    border-radius:5px;
-    transition:0.3s;
-}
-
-.btn:hover{
-    background:#0ea5e9;
-}
-
-.title{
-    text-align:center;
-    margin-bottom:40px;
-    font-size:40px;
-    color:#38bdf8;
-}
-
-.about p{
-    max-width:800px;
-    margin:auto;
-    text-align:center;
-}
-
-.skills-container,
-.projects-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:#1e293b;
-    padding:25px;
-    border-radius:10px;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.contact{
-    text-align:center;
-}
-
-.contact p{
-    margin:10px 0;
-}
-
-footer{
-    text-align:center;
-    padding:20px;
-    background:#111827;
-}
-
-@media(max-width:768px){
-    .hero h1{
-        font-size:40px;
-    }
-
-    nav ul li{
-        margin-left:15px;
-    }
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <div class="logo">Portfolio</div>
+    <!-- Header -->
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
 
-<section class="hero" id="home">
-    <h1>Hello, I'm <span>Byreddy Anitha</span></h1>
+        <div class="logo">Anitha.</div>
 
-    <h2>Full Stack Developer</h2>
+        <nav>
 
-    <p>
-        Passionate Computer Science student skilled in web development,
-        Python, JavaScript, and building innovative projects using modern technologies.
-    </p>
+            <ul>
 
-    <a href="#projects" class="btn">View Projects</a>
-</section>
+                <li><a href="#home">Home</a></li>
 
-<section class="about" id="about">
-    <h2 class="title">About Me</h2>
+                <li><a href="#about">About</a></li>
 
-    <p>
-        I am a Computer Science Engineering student passionate about
-        software development, full-stack applications, AI-based projects,
-        and solving real-world problems with technology. I enjoy learning
-        new technologies and building impactful products.
-    </p>
-</section>
+                <li><a href="#education">Education</a></li>
 
-<section id="skills">
-    <h2 class="title">Skills</h2>
+                <li><a href="#skills">Skills</a></li>
 
-    <div class="skills-container">
-        <div class="card">
-            <h3>Frontend</h3>
-            <p>HTML, CSS, JavaScript, React</p>
-        </div>
+                <li><a href="#projects">Projects</a></li>
 
-        <div class="card">
-            <h3>Backend</h3>
-            <p>Python, Django, Node.js, Express.js</p>
-        </div>
+                <li><a href="#contact">Contact</a></li>
 
-        <div class="card">
-            <h3>Database</h3>
-            <p>MySQL, MongoDB</p>
-        </div>
+            </ul>
 
-        <div class="card">
-            <h3>Tools</h3>
-            <p>Git, GitHub, VS Code, Vercel</p>
-        </div>
-    </div>
-</section>
+        </nav>
 
-<section id="projects">
-    <h2 class="title">Projects</h2>
+    </header>
 
-    <div class="projects-container">
+    <!-- Home -->
 
-        <div class="card">
-            <h3>Campus SkillSwap</h3>
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>Hello, I'm <span>Byreddy Anitha</span></h1>
+
+            <h2>Computer Science Engineering Student</h2>
+
             <p>
-                A platform that helps students find teammates with complementary skills.
+                Passionate about Web Development, Python, Java,
+                and Full Stack Development.
             </p>
+
+            <a href="resume.pdf" class="btn" download>
+                Download Resume
+            </a>
+
         </div>
 
-    </div>
-</section>
+    </section>
 
-<section class="contact" id="contact">
-    <h2 class="title">Contact Me</h2>
+    <!-- About -->
 
-    <p>Email: byreddyanitha13@gmail.com</p>
-    <p>GitHub: github.com/AnithaByreddy</p>
-    <p>LinkedIn: linkedin.com/in/byreddy-anitha-23729a332</p>
-</section>
+    <section id="about">
 
-<footer>
-    <p>© 2026 Byreddy Anitha. All Rights Reserved.</p>
-</footer>
+        <h2>About Me</h2>
 
-<script>
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e){
-        e.preventDefault();
+        <p>
 
-        document.querySelector(
-            this.getAttribute("href")
-        ).scrollIntoView({
-            behavior:"smooth"
-        });
-    });
-});
-</script>
+            I am a Computer Science Engineering student with a strong
+            academic foundation and a passion for learning new
+            technologies. I enjoy building web applications and solving
+            real-world problems through software development.
+
+        </p>
+
+        <br>
+
+        <h3>Career Objective</h3>
+
+        <p>
+
+            To secure an entry-level position in a respected organization
+            where I can utilize my knowledge, improve my technical skills,
+            and contribute to innovative projects.
+
+        </p>
+
+    </section>
+
+    <!-- Education -->
+
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>B.Tech (Computer Science Engineering)</h3>
+
+                <p>
+                    Gouthami Institute of Technology and Management for Women
+                </p>
+
+                <p>2024 - 2028</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Intermediate (MPC)</h3>
+
+                <p>
+                    Vijayawada Nalanda Junior College, Nandyal
+                </p>
+
+                <p>2022 - 2024</p>
+
+                <p><strong>85.5%</strong></p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>SSC</h3>
+
+                <p>
+                    Balaji High School, Jammalamadugu
+                </p>
+
+                <p>2021 - 2022</p>
+
+                <p><strong>91%</strong></p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+
+    <section id="skills">
+
+        <h2>Technical Skills</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Programming</h3>
+
+                <p>C</p>
+
+                <p>Python</p>
+
+                <p>Java</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Web Technologies</h3>
+
+                <p>HTML</p>
+
+                <p>CSS</p>
+
+                <p>JavaScript</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Tools</h3>
+
+                <p>Git</p>
+
+                <p>GitHub</p>
+
+                <p>VS Code</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Database</h3>
+
+                <p>MySQL</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Project -->
+
+    <section id="projects">
+
+        <h2>Project</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Campus SkillSwap</h3>
+
+                <p>
+
+                    Campus SkillSwap is a web platform that helps students
+                    connect with teammates based on their technical skills,
+                    interests, and project requirements. It simplifies team
+                    formation for academic and hackathon projects.
+
+                </p>
+
+                <br>
+
+                <p><strong>Status:</strong> 🚧 Currently Developing</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Languages -->
+
+    <section id="languages">
+
+        <h2>Languages</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>English</h3>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Telugu</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Activities -->
+
+    <section id="activities">
+
+        <h2>Activities & Interests</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Farming Activities</h3>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Sports</h3>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Arts</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Strengths -->
+
+    <section id="strengths">
+
+        <h2>Strengths</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                Good Communication Skills
+
+            </div>
+
+            <div class="card">
+
+                Problem Solving
+
+            </div>
+
+            <div class="card">
+
+                Quick Learner
+
+            </div>
+
+            <div class="card">
+
+                Team Work
+
+            </div>
+
+            <div class="card">
+
+                Analytical Thinking
+
+            </div>
+
+            <div class="card">
+
+                Ability to Work Under Pressure
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p><strong>Name:</strong> Byreddy Anitha</p>
+
+        <p><strong>Email:</strong> byreddyanitha13@gmail.com</p>
+
+        <p><strong>Phone:</strong> +91 9704154704</p>
+
+        <p><strong>Location:</strong> Y.S.R. Kadapa, Andhra Pradesh</p>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 Byreddy Anitha | All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
